@@ -1,0 +1,105 @@
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 600px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  padding: 20px;
+  background-color: rgb(246, 247, 247);
+  margin: 80px auto;
+}
+
+h1 {
+  font-size: 36px;
+  color: rgb(18, 18, 117);
+  font-weight: bold;
+  text-align: center;
+}
+
+#inputTarefa {
+  width: 400px;
+  height: 40px;
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 15px 20px;
+  margin-top: 20px;
+}
+
+#botaoAdicionar {
+  background-color: rgb(100, 100, 105);
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  margin-left: 40px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#botaoAdicionar:hover {
+  opacity: 0.6;
+}
+
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.item {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  height: 70px;
+  width: 100%;
+  box-shadow: 0 0 5px #ccc;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.item.clicado{
+  background-color: #c6e4c3;
+}
+
+.item.clicado .item-nome{
+  text-decoration:line-through;
+  color: gray;
+}
+
+.item-icone {
+  flex: 5%;
+  padding: 5px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.item-nome {
+  flex: 45%;
+  padding: 15px;
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.item-botao {
+  flex: 15%;
+  font-size: 24px;
+}
+
+.delete{
+  background-color: rgb(212, 66, 66);
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  height: 70px;
+  width: 100%;  
+  cursor: pointer;
+}
